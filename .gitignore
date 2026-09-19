@@ -1,0 +1,60 @@
+# ============================================================
+# CraftScanner — .gitignore
+# ============================================================
+
+# ---- Windows env-var literal paths (accidental artifacts) ----
+%SystemDrive%/
+%SystemRoot%/
+%TEMP%/
+%USERPROFILE%/
+%APPDATA%/
+%LOCALAPPDATA%/
+
+# ---- Build artifacts ----
+Output_ninja/
+out/
+build/
+bin/
+obj/
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+*.dll
+*.exe
+
+# ---- CMake cache ----
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CMakeUserPresets.json
+_deps/
+cargo/
+
+# ---- Visual Studio ----
+.vs/
+.vscode/
+ipch/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+*.vsconfig
+
+# ---- UE4SS framework (external, huge) ----
+RE-UE4SS/
+
+# ---- Temp / local ----
+_backup/
+*.log
+*.tmp
+*.bak
+Thumbs.db
+Desktop.ini
+
+# ---- Rust (used by UE4SS build, not by us) ----
+target/
+Cargo.lock
