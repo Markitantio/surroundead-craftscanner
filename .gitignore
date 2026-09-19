@@ -23,6 +23,8 @@ obj/
 *.obj
 *.dll
 *.exe
+*.ps1
+*.ini
 
 # ---- CMake cache ----
 CMakeCache.txt
